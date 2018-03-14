@@ -1,4 +1,9 @@
 # AsvaBottomSheet
-AsvaBottomSheet android library
+# Usage
+### Add the dependencies to your gradle file:
 
-implement 'com.asvacode.reahoo:asvabottomsheet:0.1.0'
+```gradle
+dependencies {
+    implement 'com.asvacode.reahoo:asvabottomsheet:0.1.0'
+}
+```
