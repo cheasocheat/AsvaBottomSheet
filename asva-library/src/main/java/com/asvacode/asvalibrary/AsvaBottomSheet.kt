@@ -26,7 +26,7 @@ class AsvaBottomSheet : BottomSheetDialogFragment() {
         var rootView: View = inflater!!.inflate(R.layout.fragment_asva_bottom_sheet, container, false)
         var recyclerView = rootView.findViewById(R.id.recyclerBottomSheet) as RecyclerView
         if(listItems.isEmpty()){
-            listItems.add(AsvaItem(R.drawable.monkey, R.string.app_name))
+            listItems.add(AsvaItem(R.drawable.icon, R.string.app_name))
         }
         adapter = AsvaListAdapter(listItems)
         recyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)

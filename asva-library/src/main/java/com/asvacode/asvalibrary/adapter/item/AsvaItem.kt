@@ -10,7 +10,7 @@ class AsvaItem {
     var descRes: Int? = null
     var desc: String? = null
 
-    constructor(iconRes: Int = R.drawable.monkey, descRes: Int = R.string.default_text, desc: String = "") {
+    constructor(iconRes: Int = R.drawable.icon, descRes: Int = R.string.default_text, desc: String = "") {
         this.iconRes = iconRes
         this.descRes = descRes
         this.desc = desc
