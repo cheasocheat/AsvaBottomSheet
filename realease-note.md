@@ -1,2 +1,0 @@
-# AsvaBottomSheet
-AsvaBottomSheet android library
