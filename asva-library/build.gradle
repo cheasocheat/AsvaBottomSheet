@@ -12,7 +12,11 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
 
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
 
     buildTypes {
@@ -35,7 +39,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     api 'com.android.support:design:26.1.0'
-    api 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.android.support:multidex:1.0.0'
 }
 
 apply plugin: 'kotlin-android'

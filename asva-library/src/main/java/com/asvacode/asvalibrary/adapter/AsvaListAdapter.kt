@@ -6,11 +6,9 @@ import android.view.ViewGroup
 import com.asvacode.asvalibrary.AsvaItemClickListener
 import com.asvacode.asvalibrary.adapter.item.AsvaItem
 import com.asvacode.asvalibrary.R
-import com.asvacode.asvalibrary.extension.inflate
 import com.asvacode.asvalibrary.extension.loadLocal
 import kotlinx.android.synthetic.main.asva_list_item.view.*
 import android.view.LayoutInflater
-
 
 
 /**
@@ -19,14 +17,14 @@ import android.view.LayoutInflater
 class AsvaListAdapter() : RecyclerView.Adapter<AsvaListAdapter.AsvaViewHolder>() {
 
     private var lstAsvaItems: ArrayList<AsvaItem> = ArrayList()
-    var clickListener : AsvaItemClickListener? = null
+    var clickListener: AsvaItemClickListener? = null
 
     constructor(lstAsvaItems: ArrayList<AsvaItem>) : this() {
         this.lstAsvaItems = lstAsvaItems
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): AsvaViewHolder {
-       // var view  = parent?.inflate(R.layout.asva_list_item, ,false)
+        // var view  = parent?.inflate(R.layout.asva_list_item, ,false)
         val itemView = LayoutInflater.from(parent?.context)
                 .inflate(R.layout.asva_list_item, parent, false)
 
@@ -42,21 +40,23 @@ class AsvaListAdapter() : RecyclerView.Adapter<AsvaListAdapter.AsvaViewHolder>()
     }
 
 
-    inner class AsvaViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) , View.OnClickListener {
+    inner class AsvaViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         init {
             itemView?.setOnClickListener(this)
         }
+
         fun bindData(item: AsvaItem) = with(itemView) {
             this.imgIcon.loadLocal(item.iconRes!!)
-            if(item.desc!!.isEmpty()){
+            if (item.desc!!.isEmpty()) {
                 this.tvDesc.text = resources.getText(item.descRes!!)
-            }else {
+            } else {
                 this.tvDesc.text = item.desc
             }
         }
+
         override fun onClick(v: View?) {
             clickListener.let {
-                clickListener?.onItemClick(view = itemView, position = adapterPosition)
+                clickListener?.onItemClick(itemView, adapterPosition)
             }
         }
     }
