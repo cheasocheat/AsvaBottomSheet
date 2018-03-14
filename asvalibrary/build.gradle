@@ -1,9 +1,33 @@
 apply plugin: 'com.android.library'
 
+ext {
+    // Library
+    LIBRARY_NAME = 'AsvaBottomSheet'
+    PUBLISH_GROUP_ID = 'com.asvacode.reahoo'
+    PUBLISH_ARTIFACT_ID = LIBRARY_NAME.toLowerCase()
+    PUBLISH_VERSION = '0.1.0'
+
+    // Bintray
+    BINTRAY_REPO = 'maven'
+    LIBRARY_DESC = 'BottomsheetDialogFragment which using recyclerview for its items'
+
+    // Github
+    GIT_REPO_URL = 'https://github.com/cheasocheat/AsvaBottomSheet'
+    GIT_VCS_URL  = GIT_REPO_URL + '.git'
+    GIT_USER_REPO_NAME = 'cheasocheat/AsvaBottomSheet'
+
+    // Developer Info
+    DEVELOPER_ID = 'cheasocheat'
+    DEVELOPER_NAME = 'Chea Socheat'
+    DEVELOPER_EMAIL = 'cheasocheat.km@gmail.com'
+
+    // Licence
+    LICENSE_NAME = 'The Apache Software License, Version 2.0'
+    LICENSE_URL = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    ALL_LICENSES = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 26
-
-
 
     defaultConfig {
         minSdkVersion 16
@@ -26,6 +50,9 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -45,3 +72,6 @@ dependencies {
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+//Add these lines to publish library to bintray
+//Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/Chivorns/publish-android-library-plugin/master/publish_lib_v1.gradle'
