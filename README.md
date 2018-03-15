@@ -4,6 +4,6 @@
 
 ```gradle
 dependencies {
-    implement 'com.asvacode.reahoo:asvabottomsheet:0.1.0'
+    implement 'com.asvacode.asvabottomsheet:asvabottomsheet:1.0'
 }
 ```
