@@ -1,4 +1,4 @@
-package com.asvacode.asvalibrary.adapter.item
+package com.asvacode.asvabottomsheet.adapter.item
 
 import com.asvacode.asvalibrary.R
 

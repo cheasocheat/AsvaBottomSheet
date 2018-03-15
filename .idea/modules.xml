@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AsvaBottomSheet.iml" filepath="$PROJECT_DIR$/AsvaBottomSheet.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/asvalibrary/asva-library.iml" filepath="$PROJECT_DIR$/asvalibrary/asva-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asvabottomsheet/asvalibrary.iml" filepath="$PROJECT_DIR$/asvabottomsheet/asvalibrary.iml" />
     </modules>
   </component>
 </project>

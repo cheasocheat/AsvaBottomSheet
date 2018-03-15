@@ -1,12 +1,12 @@
-package com.asvacode.asvalibrary.adapter
+package com.asvacode.asvabottomsheet.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.asvacode.asvalibrary.AsvaItemClickListener
-import com.asvacode.asvalibrary.adapter.item.AsvaItem
+import com.asvacode.asvabottomsheet.AsvaItemClickListener
+import com.asvacode.asvabottomsheet.adapter.item.AsvaItem
 import com.asvacode.asvalibrary.R
-import com.asvacode.asvalibrary.extension.loadLocal
+import com.asvacode.asvabottomsheet.extension.loadLocal
 import kotlinx.android.synthetic.main.asva_list_item.view.*
 import android.view.LayoutInflater
 

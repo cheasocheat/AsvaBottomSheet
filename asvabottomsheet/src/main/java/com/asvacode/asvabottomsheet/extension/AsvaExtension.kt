@@ -1,4 +1,4 @@
-package com.asvacode.asvalibrary.extension
+package com.asvacode.asvabottomsheet.extension
 
 import android.net.Uri
 import android.support.annotation.LayoutRes

@@ -3,9 +3,9 @@ package com.asvacode.asvabottomsheet
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.asvacode.asvalibrary.AsvaBottomSheet
-import com.asvacode.asvalibrary.AsvaItemClickListener
-import com.asvacode.asvalibrary.adapter.item.AsvaItem
+import com.asvacode.asvabottomsheet.AsvaBottomSheet
+import com.asvacode.asvabottomsheet.AsvaItemClickListener
+import com.asvacode.asvabottomsheet.adapter.item.AsvaItem
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 

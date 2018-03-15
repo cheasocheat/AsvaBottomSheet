@@ -1,4 +1,4 @@
-package com.asvacode.asvalibrary
+package com.asvacode.asvabottomsheet
 
 
 import android.os.Bundle
@@ -9,8 +9,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.asvacode.asvalibrary.adapter.AsvaListAdapter
-import com.asvacode.asvalibrary.adapter.item.AsvaItem
+import com.asvacode.asvabottomsheet.adapter.AsvaListAdapter
+import com.asvacode.asvabottomsheet.adapter.item.AsvaItem
+import com.asvacode.asvalibrary.R
 
 
 /**
@@ -19,7 +20,7 @@ import com.asvacode.asvalibrary.adapter.item.AsvaItem
 class AsvaBottomSheet : BottomSheetDialogFragment() {
     var adapter: AsvaListAdapter? = null
     var listItems = ArrayList<AsvaItem>()
-    var onItemClickListener : AsvaItemClickListener ? = null
+    var onItemClickListener : AsvaItemClickListener? = null
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
